@@ -46,22 +46,29 @@ public class MybatisTest {
 
     @Test
     public void testFindAll() {
-
         List<User> users = userDao.findAll();
         for(User user : users){
             System.out.println(user);
         }
-
     }
 
     @Test
     public void testSaveUser() throws IOException {
-
         User user = new User();
         user.setUsername("aowuaowuao");
         userDao.saveUser(user);
+    }
 
+    @Test
+    public void testUpdateUser() throws IOException {
+        User user = new User();
+        user.setId(72);
+        user.setUsername("miaowu");
+        userDao.updateUser(user);
+    }
 
-
+    @Test
+    public void testDeleteUser() throws IOException {
+        userDao.deleteUser(72);
     }
 }

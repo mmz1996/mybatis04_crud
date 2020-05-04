@@ -12,4 +12,13 @@
         insert into user(username,address,sex,birthday)values(#{username},#{address},#{sex},#{birthday});
     </insert>
 
+    <update id="updateUser" parameterType="com.mmz.pojo.User">
+        update user set username=#{username},address=#{address},sex=#{sex},birthday=#{birthday} where id = #{id};
+    </update>
+
+    <delete id="deleteUser">
+        delete from user where id =#{id};
+    </delete>
+
+
 </mapper>
