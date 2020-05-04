@@ -8,4 +8,8 @@
         select * from user;
     </select>
 
+    <insert id="saveUser" parameterType="com.mmz.pojo.User">
+        insert into user(username,address,sex,birthday)values(#{username},#{address},#{sex},#{birthday});
+    </insert>
+
 </mapper>

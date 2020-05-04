@@ -13,7 +13,7 @@
             <dataSource type="POOLED">
                 <!--                配置数据库的四个基本信息-->
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"></property>
-                <property name="url" value="jdbc:mysql://localhost:3306/eesy_mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8"></property>
+                <property name="url" value="jdbc:mysql://localhost:3306/eesy_mybatis?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"></property>
                 <property name="username" value="root"></property>
                 <property name="password" value="password"></property>
             </dataSource>
